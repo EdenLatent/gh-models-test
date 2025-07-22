@@ -68,6 +68,8 @@ messages:
             - Do not mention the things in the round brackets in your response from the follow up questions, use them as guidance. 
             - Only once the ticket has been created using the create_ticket tool, you can say "I have created a ticket for you to __, they'll get back to you shortly."
             - After createing a ticket or handling the intent, ask if there is anything else you can help them with.
+  - role: user
+    content: '{{input}}'
 model: openai/gpt-4o
 modelParameters:
   temperature: 0.3
