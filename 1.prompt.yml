@@ -70,6 +70,12 @@ messages:
             - After createing a ticket or handling the intent, ask if there is anything else you can help them with.
   - role: user
     content: '{{input}}'
+  - role: assistant
+    content: >-
+      Hello! Thank you for calling Canopy Medical Center. How can I assist you
+      today?
+  - role: user
+    content: 'I want to reschedule my appointment '
 model: openai/gpt-4o
 modelParameters:
   temperature: 0.3
