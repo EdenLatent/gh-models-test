@@ -79,4 +79,6 @@ testData:
     expected: >-
       Hello! Thank you for calling Canopy Medical Center. How can I assist you
       today?
-evaluators: []
+evaluators:
+  - name: Similarity
+    uses: github/similarity
